@@ -36,6 +36,7 @@ namespace HackerRank.MonthOfCode
             //Calculate total cost
             double totalCost = meal_cost + tip + tax;
 
+            //Return total cost rounded
             return Math.Round(totalCost, 0, MidpointRounding.AwayFromZero);
         }
 
