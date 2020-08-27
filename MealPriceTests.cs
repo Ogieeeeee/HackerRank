@@ -28,7 +28,6 @@ namespace HackerRank
             Assert.Equal(expecteddMealPrice, actualMealPrice);
         }
 
-
         [Theory]
         [InlineData(12, 8, 2, 13)]
         [InlineData(20, 8, 2, 22)]
@@ -41,9 +40,6 @@ namespace HackerRank
             //Assert
             Assert.Equal(expectedMealPrice, actualMealPrice);
         }
-
-
-
 
         [Theory]
         [InlineData(12, 8, 2, 13)]
