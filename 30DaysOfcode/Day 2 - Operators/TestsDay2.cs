@@ -4,7 +4,7 @@ using Xunit;
 
 namespace HackerRank
 {
-    public class MealPriceTests
+    public class TestsDay2
     {
         [Fact]
         public void MealPrice_CalculateMealPrice()
@@ -22,7 +22,7 @@ namespace HackerRank
             System.Console.WriteLine(expecteddMealPrice);
 
             //Act
-            double actualMealPrice = SolutionDay2.MealPrice(MEAL_PRICE_NO_TAX, TIP, TAX);
+            double actualMealPrice = SolutionsDay2.MealPrice(MEAL_PRICE_NO_TAX, TIP, TAX);
 
             //Asert
             Assert.Equal(expecteddMealPrice, actualMealPrice);
@@ -32,10 +32,10 @@ namespace HackerRank
         [InlineData(12, 8, 2, 13)]
         [InlineData(20, 8, 2, 22)]
         [InlineData(33, 8, 2, 36)]
-        public void MealPriceAlt_CalculateMealPrice(double mealCost, int tip, int tax, double expectedMealPrice)
+        public void MealPriceAlt_CalculateMealPriceWithTipAndTax(double mealCost, int tip, int tax, double expectedMealPrice)
         {
             //Act
-            double actualMealPrice = SolutionDay2.MealPriceAlt(mealCost, tip, tax);
+            double actualMealPrice = SolutionsDay2.MealPriceAlt(mealCost, tip, tax);
 
             //Assert
             Assert.Equal(expectedMealPrice, actualMealPrice);
@@ -45,10 +45,10 @@ namespace HackerRank
         [InlineData(12, 8, 2, 13)]
         [InlineData(20, 8, 2, 22)]
         [InlineData(33, 8, 2, 36)]
-        public void MealPriceAlt2_CalculateMealPrice(double mealCost, int tip, int tax, double expectedMealPrice)
+        public void MealPriceAlt2_CalculateMealPriceWithTipAndTax(double mealCost, int tip, int tax, double expectedMealPrice)
         {
             //Act
-            double actualMealPrice = SolutionDay2.MealPriceAlt2(mealCost, tip, tax);
+            double actualMealPrice = SolutionsDay2.MealPriceAlt2(mealCost, tip, tax);
 
             //Assert
             Assert.Equal(expectedMealPrice, actualMealPrice);

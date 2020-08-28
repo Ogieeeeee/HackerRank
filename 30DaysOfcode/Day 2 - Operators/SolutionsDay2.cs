@@ -2,7 +2,7 @@ using System;
 
 namespace HackerRank.MonthOfCode
 {
-    public static class SolutionDay2
+    public static class SolutionsDay2
     {
         // The exercise is to calculate the meal cost. This cost is rounded to the nearest integer. 
         // For example: 15.36 becomes 15 
