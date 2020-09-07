@@ -1,5 +1,6 @@
 ﻿using System;
 using HackerRank.MonthOfCode;
+
 namespace HackerRank
 {
     class Program
@@ -19,6 +20,21 @@ namespace HackerRank
 
             // Solution
             System.Console.WriteLine(SolutionDay3.Weird(2));
+
+
+            // Day 3
+            // Solution
+
+            // Todo: Add day 3  <-----
+
+            // Day 4
+            // Solution
+
+            // Todo: Add day 4 <----
+
+            // Day 5
+            // Solution
+            Loops.ProductOfSomeNumberTo10(2);
 
         }
     }
