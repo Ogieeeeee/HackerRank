@@ -1,4 +1,4 @@
-public static class WarmUpChallanges
+public static class WarmUpChallenges
 {
 
     // ar = [10, 20, 20, 10, 10, 30, 50, 10, 20]
