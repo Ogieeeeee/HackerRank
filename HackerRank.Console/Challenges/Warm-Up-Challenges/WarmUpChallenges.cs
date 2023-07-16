@@ -1,4 +1,4 @@
-public static class WarmUpChallanges
+public static class WarmUpChallenges
 {
 
     // ar = [10, 20, 20, 10, 10, 30, 50, 10, 20]
@@ -22,6 +22,27 @@ public static class WarmUpChallanges
                 }
             }
         }
+        return result;
+    }
+
+    public static int CountingValleys(int steps, string path)
+    {
+        int seaLevel = 0;
+        int prevSeaLevel = 0;
+        int result = 0;
+        for (int i = 0; i < path.Length; i++)
+        {
+            if (path[i] == 'U')
+                seaLevel++;
+            else
+                seaLevel--;
+
+            if (i >= 1 && seaLevel == 0 && prevSeaLevel == -1)
+                result++;
+
+            prevSeaLevel = seaLevel;
+        }
+
         return result;
     }
 }
