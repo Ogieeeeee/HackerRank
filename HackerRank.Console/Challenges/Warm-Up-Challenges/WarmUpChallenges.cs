@@ -45,4 +45,23 @@ public static class WarmUpChallenges
 
         return result;
     }
+
+    public static int jumpingOnClouds(List<int> c)
+    {
+        int result = 0;
+        double jumpcounter = 0;
+        for (int i = 0; i < c.Count(); i++)
+        {
+            if (c[i] == 0)
+            {
+                jumpcounter += 1;
+            }
+            else
+            {
+                result += (int)Math.Ceiling((jumpcounter - 1) / 2) + 1;
+                jumpcounter = 0;
+            }
+        }
+        return result + (int)Math.Ceiling((jumpcounter - 1) / 2);
+    }
 }
